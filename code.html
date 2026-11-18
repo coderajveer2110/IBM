@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom, 0px) + 0.5rem);}.pt-safe{padding-top:env(safe-area-inset-top, 0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-dim": "#dadad9", "on-secondary-container": "#682c00", "tertiary": "#283245", "inverse-on-surface": "#f1f1f0", "surface-container-highest": "#e2e2e2", "error": "#ba1a1a", "inverse-primary": "#96d5a3", "tertiary-fixed": "#d8e3fb", "surface-container-lowest": "#ffffff", "outline": "#717970", "secondary-fixed": "#ffdbca", "on-background": "#1a1c1c", "on-error-container": "#93000a", "surface-variant": "#e2e2e2", "on-tertiary-container": "#adb8cf", "outline-variant": "#c0c9be", "inverse-surface": "#2f3130", "on-secondary-fixed": "#331200", "secondary": "#9b4500", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#12512c", "on-secondary": "#ffffff", "error-container": "#ffdad6", "on-error": "#ffffff", "secondary-fixed-dim": "#ffb68e", "on-surface-variant": "#404941", "on-surface": "#1a1c1c", "on-tertiary-fixed": "#111c2d", "on-secondary-fixed-variant": "#763300", "primary": "#003b1b", "primary-fixed-dim": "#96d5a3", "surface-container": "#eeeeed", "tertiary-container": "#3e495c", "primary-fixed": "#b1f2be", "surface-tint": "#2e6a41", "on-primary-container": "#87c695", "surface": "#f9f9f8", "surface-container-low": "#f3f4f3", "on-primary-fixed": "#00210d", "secondary-container": "#fd8a42", "background": "#f9f9f8", "on-primary": "#ffffff", "tertiary-fixed-dim": "#bcc7de", "surface-bright": "#f9f9f8", "on-tertiary-fixed-variant": "#3c475a", "primary-container": "#14532d", "surface-container-high": "#e8e8e7" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "margin-tablet": "2rem", "space-xl": "2.5rem", "gutter-desktop": "2rem", "gutter": "1rem", "gutter-tablet": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "3rem", "margin": "1rem", "space-xs": "0.25rem" }, fontFamily: { "display-lg": ["Plus Jakarta Sans"], "label-sm": ["Noto Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Noto Sans"], "label-lg": ["Noto Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Noto Sans"], "body-md": ["Noto Sans"], "body-sm": ["Noto Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "numeric-currency": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-sm": ["11px", { lineHeight: "16px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "600" }], "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-sm": ["18px", { lineHeight: "26px", fontWeight: "600" }], "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }], "label-lg": ["15px", { lineHeight: "20px", fontWeight: "600" }], "headline-md": ["22px", { lineHeight: "28px", fontWeight: "600" }], "label-md": ["13px", { lineHeight: "18px", fontWeight: "600" }], "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "display-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "numeric-currency": ["24px", { lineHeight: "30px", fontWeight: "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="Brand logo. - Primary color: #14532d
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-sm
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1XSiE5dLJGF00YKzqVHF9II7483_UPdPpXLTcfYfIzGa9Z29kDkQooROeFn3MJ9DMQpQB3HvmV11TgioPiIH2KJrJOLhA64Rk-Q_obUiSRs47KycAubJ6sq6BM2p2SR55EZDTMo0IG5sdvTpr2QOU4Sc1IZO0aBjmObrHnwXkgi0YClOKl9faV0kf5CS1zisWFAG_vtrnI7w0WV3gmy2nrmF2-O01Sf69vRTdeZE0M0B2kmhnyzEX7yifQ"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate">ARTHSETU</span><span class="font-label-sm text-[10px] uppercase tracking-wider px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-bold shrink-0">SIH 2026</span></div><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Explore</span></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Voice Assist / ध्वनि सहायता" class="w-11 h-11 flex items-center justify-center rounded-full text-secondary hover:bg-surface-container active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">record_voice_over</span></button><button aria-label="Notifications / सूचनाएं" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container active:scale-95 transition-all relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary-container ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification (Offline/Sync simulation) -->
+<div class="hidden fixed top-20 left-4 right-4 z-50 bg-primary text-on-primary p-space-md rounded-xl shadow-xl flex items-center justify-between transition-all duration-300" id="sync-toast">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-[24px] text-primary-fixed shrink-0">check_circle</span>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-label-md truncate">क्लाउड डेटा सुरक्षित अपडेट हुआ</span>
+<span class="font-label-sm text-[10px] text-primary-fixed-dim">All local business plans are synchronized.</span>
+</div>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-on-primary/80 hover:bg-primary-container shrink-0" onclick="document.getElementById('sync-toast').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="px-gutter flex flex-col gap-space-lg pb-space-xl">
+<!-- 1. Citizen Profile Header Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="relative shrink-0">
+<div class="w-16 h-16 rounded-full bg-primary-container flex items-center justify-center text-on-primary text-display-lg-mobile shadow-sm">
+<span class="material-symbols-outlined text-[36px]">person</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[15px] text-on-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface font-bold tracking-tight">रमेश कुमार</h2>
+<span class="font-label-sm text-[11px] text-on-surface-variant font-normal">(Ramesh Kumar)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary shrink-0">location_on</span>
+<span class="truncate">ग्राम मंगारी, ब्लॉक पिंडरा, ज़िला वाराणसी (उ.प्र.)</span>
+</p>
+<div class="mt-1.5 inline-flex items-center gap-1 bg-surface-container px-2 py-0.5 rounded text-on-surface-variant w-fit">
+<span class="material-symbols-outlined text-[13px] text-tertiary">badge</span>
+<span class="font-label-sm text-[11px] font-bold tracking-wider text-tertiary">ARTHSETU-2026-VNS-091</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges & Verified Credentials Strip -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-primary-fixed/40 text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">id_card</span> आधार लिंक
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-primary-fixed/40 text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">account_balance</span> बैंक खाता सत्यापित
+        </span>
+<span class="inline-flex items-center gap-1 px-2 py-1 rounded bg-primary-fixed/40 text-primary font-label-sm text-[11px]">
+<span class="material-symbols-outlined text-[14px]">storefront</span> CSC उद्यम पंजीकृत
+        </span>
+</div>
+<button class="w-full h-12 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors active:scale-[0.99]">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>प्रोफ़ाइल विवरण संपादित करें (Edit Profile)</span>
+</button>
+</div>
+<!-- 2. Offline & Data Sync Center -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="bg-primary text-on-primary p-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">cloud_sync</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h3 class="font-headline-sm text-headline-sm leading-tight">ऑफ़लाइन स्थिति व डेटा सिंक</h3>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">Zero-Connectivity Storage Hub</span>
+</div>
+</div>
+<span class="bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-label-sm text-[10px] uppercase font-bold shrink-0">100% Ready</span>
+</div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim"></span>
+<span class="font-label-md text-label-md text-on-surface">अंतिम क्लाउड सिंक:</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">आज, दोपहर 01:15 बजे</span>
+</div>
+<div class="space-y-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">लोकल फोन मेमोरी में सुरक्षित सामग्री:</span>
+<div class="grid grid-cols-1 gap-space-xs">
+<div class="p- space-sm bg-surface-container p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px]">description</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">व्यवसायिक योजनाएं (DPR Drafts)</span>
+</div>
+<span class="font-numeric-currency text-label-md text-on-surface font-bold">2 फाइलें</span>
+</div>
+<div class="p- space-sm bg-surface-container p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">सरकारी सब्सिडी नियम (Offline Rules)</span>
+</div>
+<span class="font-numeric-currency text-label-md text-on-surface font-bold">4 योजनाएं</span>
+</div>
+<div class="p- space-sm bg-surface-container p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[20px]">contact_phone</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">स्थानीय खरीदार व मंडी संपर्क सूची</span>
+</div>
+<span class="font-numeric-currency text-label-md text-on-surface font-bold">14 फोन नंबर</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-body-sm text-body-sm">लंबित बदलाव (Pending Outbox):</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed/50 text-on-primary-fixed font-bold">0 (सभी सुरक्षित)</span>
+</div>
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-sm active:scale-[0.99] transition-all" id="sync-btn" onclick="const btn = this; const icon = btn.querySelector('.sync-icon'); icon.classList.add('animate-spin'); btn.disabled=true; setTimeout(() =&gt; { icon.classList.remove('animate-spin'); btn.disabled=false; document.getElementById('sync-toast').classList.remove('hidden'); }, 1400);">
+<span class="material-symbols-outlined text-[20px] sync-icon">sync</span>
+<span>डेटा अभी सिंक करें (Force Sync Now)</span>
+</button>
+</div>
+</div>
+<!-- 3. My Plans & DPRs -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">मेरे सुरक्षित प्लान व डिजिटल डीपीआर</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">My Feasibility Reports &amp; DPRs</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold bg-secondary-fixed text-on-secondary-fixed px-2 py-0.5 rounded-full">2 सक्रिय</span>
+</div>
+<!-- Plan Card 1: Active & Ready -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] font-bold px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed uppercase tracking-wider">अनुमोदित प्रारूप • DPR तैयार</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">12 पृष्ठ</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">मिनी सरसों तेल एक्सपेलर (20 किग्रा/घंटा)</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mustard Oil Processing Unit • Pindra</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-primary-fixed/30 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">oil_barrel</span>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 bg-surface-container-low p-2 rounded-lg">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">परियोजना लागत</span>
+<span class="font-numeric-currency text-[13px] text-on-surface font-bold">₹48,000</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">सब्सिडी अनुमान</span>
+<span class="font-label-sm text-[12px] text-secondary font-bold">PMEGP 35%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant">संभाव्यता स्कोर</span>
+<span class="font-label-sm text-[12px] text-primary font-bold">94/100</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<button class="flex-1 h-11 rounded-lg bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>DPR PDF डाउनलोड</span>
+</button>
+<button class="flex-1 h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+<span>कार्ययोजना देखें</span>
+</button>
+</div>
+</div>
+<!-- Plan Card 2: Draft -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-[10px] font-bold px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed uppercase tracking-wider">ड्राफ्ट (65% पूर्ण)</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">सुरक्षित</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">मसाला पिराई व पैकेजिंग इकाई</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Spices Grinding &amp; Packaging Business</span>
+</div>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/40 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[24px]">grain</span>
+</div>
+</div>
+<!-- Progress bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 65%;"></div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant">बाज़ार सर्वेक्षण चरण शेष है</span>
+<button class="h-10 px-4 rounded-lg bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1 hover:bg-primary hover:text-on-primary transition-all">
+<span>योजना आगे बढ़ाएं (Continue)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4. Preferences & Settings -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">भाषा व प्रदर्शन प्राथमिकताएं</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">App Controls &amp; Accessibility</span>
+</div>
+<!-- App Language Picker -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">translate</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface">ऐप की भाषा (Language)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">वर्तमान: हिन्दी (Hindi)</span>
+</div>
+</div>
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg">
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-[12px] font-bold shadow-sm">हिन्दी</button>
+<button class="px-3 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-[12px]">English</button>
+</div>
+</div>
+<!-- Voice Guidance Toggle -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">record_voice_over</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">ध्वनि मार्गदर्शन (Voice Guidance)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">हर स्क्रीन पर स्वतः ऑडियो सहायता</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Low Data Mode Toggle -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-3 min-w-0 pr-2">
+<div class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">network_check</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface truncate">कम डेटा मोड (2G / Low Data)</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">ग्रामीण नेटवर्क पर न्यूनतम डेटा खपत</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- 5. Official Helpdesk & Directory -->
+<div class="flex flex-col gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">आधिकारिक सहायता व संपर्क निर्देशिका</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified Village &amp; District Support Desk</span>
+</div>
+<!-- Helpdesk Card 1: VLE Mitra -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-primary font-bold uppercase tracking-wider">नजदीकी ब्लॉक सहायता</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">पिंडरा ब्लॉक सहायता केंद्र</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">अधिकारी: श्री अवनीश राय (VLE मित्र)</p>
+<span class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">समय: प्रातः 9:00 AM - शाम 6:00 PM</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">support_agent</span>
+</div>
+</div>
+<a class="w-full h-11 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md flex items-center justify-center gap-2 shadow-sm transition-colors" href="tel:+919452000000">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>कॉल करें (+91 94520 XXXXX)</span>
+</a>
+</div>
+<!-- Helpdesk Card 2: DIC Helpline -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-secondary font-bold uppercase tracking-wider">ज़िला उद्योग केंद्र (DIC)</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">DIC हेल्पलाइन, वाराणसी</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">PMEGP, MSME व सरकारी ऋण सब्सिडी मार्गदर्शन</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/50 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+</div>
+<a class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors" href="tel:1800112026">
+<span class="material-symbols-outlined text-[18px]">dialer_sip</span>
+<span>टोल-फ्री हेल्पलाइन 1800-11-2026</span>
+</a>
+</div>
+<!-- Helpdesk Card 3: KVK IIVR -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-[10px] text-tertiary font-bold uppercase tracking-wider">कृषि विज्ञान केंद्र (KVK)</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold truncate">IIVR वाराणसी (भारतीय सब्जी अनुसंधान)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">खाद्य प्रसंस्करण, कोल्ड चेन व तकनीकी प्रशिक्षण परामर्श</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[22px]">biotech</span>
+</div>
+</div>
+<button class="w-full h-11 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>परामर्श व शिविर समय देखें (KVK Info)</span>
+</button>
+</div>
+</div>
+<!-- 6. Legal, Transparency & SIH 2026 Credits -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed shrink-0">
+<span class="material-symbols-outlined text-[22px]">military_tech</span>
+</div>
+<div class="flex flex-col min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">स्मार्ट इंडिया हैकाथॉन 2026</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Smart India Hackathon • Team DeepMatrix</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-[11px] font-bold text-tertiary uppercase">Problem Statement: SIH26091</span>
+<p class="font-body-sm text-[13px] text-on-surface-variant leading-relaxed">
+          AI-Driven Hyper-Local Business Advisory &amp; Vernacular DPR Synthesis for Rural Micro-Enterprises.
+        </p>
+</div>
+<!-- Privacy & Encryption Guarantee Badge -->
+<div class="flex items-start gap-2.5 p-space-sm rounded-lg bg-primary-fixed/20 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">security</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-bold text-primary">100% डेटा सुरक्षा व पूर्ण गोपनीयता (Data Encryption)</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant leading-tight mt-0.5">
+            शून्य तृतीय-पक्ष मुद्रीकरण। कृषक एवं ग्रामीण नागरिकों का वित्तीय विवरण पूर्णतः सुरक्षित है।
+          </span>
+</div>
+</div>
+<!-- Terms & Disclaimers links -->
+<div class="flex items-center justify-between text-on-surface-variant pt-space-xs">
+<a class="font-label-sm text-[12px] hover:text-primary underline" href="#">गोपनीयता नीति (Privacy Policy)</a>
+<span class="text-surface-dim">•</span>
+<a class="font-label-sm text-[12px] hover:text-primary underline" href="#">नियम व शर्तें (Terms of Service)</a>
+<span class="text-surface-dim">•</span>
+<a class="font-label-sm text-[12px] hover:text-primary underline" href="#">अस्वीकरण (Disclaimer)</a>
+</div>
+<!-- Logout / Switch Account Button -->
+<button class="w-full h-12 rounded-lg bg-surface-container hover:bg-error-container hover:text-on-error-container text-error font-label-lg text-label-lg flex items-center justify-center gap-2 mt-2 transition-colors active:scale-[0.99]">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+<span>लॉग आउट / खाता बदलें (Logout / Switch User)</span>
+</button>
+<div class="text-center font-label-sm text-[11px] text-on-surface-variant opacity-70 pt-2">
+        ARTHSETU App Build v2.4.1 (SIH-VNS-Kiosk Edition)
+      </div>
+</div>
+</div>
+</div></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-1"><a class="flex flex-col items-center justify-center flex-1 h-full py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">roofing</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Home</span><span class="font-label-sm text-[9px] leading-none opacity-80 font-normal">मुख्य पृष्ठ</span></a><a class="flex flex-col items-center justify-center flex-1 h-full py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">explore</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Explore</span><span class="font-label-sm text-[9px] leading-none opacity-80 font-normal">खोजें</span></a><a class="flex flex-col items-center justify-center flex-1 h-full py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="my-plans" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">My Plans</span><span class="font-label-sm text-[9px] leading-none opacity-80 font-normal">मेरे प्लान</span></a><a class="flex flex-col items-center justify-center flex-1 h-full py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="tools" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Tools</span><span class="font-label-sm text-[9px] leading-none opacity-80 font-normal">टूल्स</span></a><a class="flex flex-col items-center justify-center flex-1 h-full py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-[11px] leading-tight mt-0.5">Profile</span><span class="font-label-sm text-[9px] leading-none opacity-80 font-normal">प्रोफ़ाइल</span></a></div></nav></body></html>
